@@ -1,5 +1,10 @@
 
 """
+Bu proje github üzerinden paylaşılmaktadır
+
+"""
+
+"""
 MQTT
 Hafiftir: Küçük paket boyutları sayesinde internet kotasını ve işlemci gücünü yormaz.
 Enerji Tasarrufu Sağlar: Pilli ve uzaktaki cihazların uzun süre çalışmasına yardım eder.
