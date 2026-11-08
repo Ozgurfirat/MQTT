@@ -24,13 +24,16 @@ global mesaj_alındı
 def mesaj_yolla():
     global yayın_başlığı
     global client
+    # burada yorum var githubda görünen
     mesaj = gönderilen_yazı_kutusu.get("1.0",END)
     client.publish(yayın_başlığı, "Özgür: " + mesaj)
 
 # parantez içinde yer alan parametreler yazılmalıdır
 def mesaj_alındı(client, userdata, message):
     gelen_yazı_kutusu.insert(END , message.payload.decode())
+    print("Krşıdan mesaj alındı (GITHUB deneme)")
     print(f"Mesaj alındı: {message.payload.decode()}")
+
 
 def yayın_başlığı_güncelle():
     global yayın_başlığı
